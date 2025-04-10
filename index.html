@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechInsights</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/master/src/img/favicon.ico">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-12">
+                <a href="#" class="text-2xl font-playfair font-bold text-gray-800">TechInsights</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Blog</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:border-blue-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-6">
+                        Discover Insights in Technology & Innovation
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Explore the latest trends, insights, and breakthroughs in technology. 
+                        Join our community of tech enthusiasts and stay ahead of the curve.
+                    </p>
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
+                        Explore Blog
+                    </button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" 
+                         alt="Tech Blog Hero" 
+                         class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <!-- Main Content -->
+                <div class="w-full lg:w-2/3 px-4">
+                    <h2 class="text-3xl font-playfair font-bold mb-8">Latest Articles</h2>
+                    <!-- Blog Post Card -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                        <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" 
+                             alt="Blog Post" 
+                             class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Technology</span>
+                                <span class="text-gray-500 text-sm ml-4">5 min read</span>
+                            </div>
+                            <h3 class="text-2xl font-playfair font-bold mb-4">
+                                The Future of Artificial Intelligence in 2024
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Explore the latest developments in AI and how they're shaping our future. 
+                                From machine learning breakthroughs to ethical considerations...
+                            </p>
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">
+                                Read More →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- More Blog Posts -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" 
+                                 alt="Blog Post" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Development</span>
+                                <h3 class="text-xl font-playfair font-bold mt-4 mb-2">
+                                    Web Development Trends to Watch
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Stay updated with the latest web development trends and technologies...
+                                </p>
+                                <button class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                    Read More →
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg" 
+                                 alt="Blog Post" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Innovation</span>
+                                <h3 class="text-xl font-playfair font-bold mt-4 mb-2">
+                                    The Rise of No-Code Platforms
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Discover how no-code platforms are revolutionizing software development...
+                                </p>
+                                <button class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                    Read More →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="w-full lg:w-1/3 px-4 mt-8 lg:mt-0">
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-playfair font-bold mb-6">About the Author</h3>
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
+                                 alt="Author" 
+                                 class="w-16 h-16 rounded-full object-cover">
+                            <div class="ml-4">
+                                <h4 class="font-bold">John Doe</h4>
+                                <p class="text-gray-600 text-sm">Tech Enthusiast & Writer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">
+                            Passionate about technology and its impact on our daily lives. 
+                            Writing to share insights and inspire others in the tech community.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-playfair font-bold mb-6">Popular Posts</h3>
+                        <div class="space-y-4">
+                            <a href="#" class="flex items-center hover:bg-gray-50 p-2 rounded-lg transition">
+                                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" 
+                                     alt="Popular Post" 
+                                     class="w-16 h-16 rounded object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-medium text-sm">The Future of Web Development</h4>
+                                    <p class="text-gray-500 text-xs mt-1">2.5k views</p>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center hover:bg-gray-50 p-2 rounded-lg transition">
+                                <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg" 
+                                     alt="Popular Post" 
+                                     class="w-16 h-16 rounded object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-medium text-sm">Understanding Cloud Computing</h4>
+                                    <p class="text-gray-500 text-xs mt-1">1.8k views</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-playfair font-bold mb-6">Categories</h3>
+                        <div class="space-y-2">
+                            <a href="#" class="flex items-center justify-between hover:bg-gray-50 p-2 rounded-lg transition">
+                                <span class="text-gray-600">Technology</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">24</span>
+                            </a>
+                            <a href="#" class="flex items-center justify-between hover:bg-gray-50 p-2 rounded-lg transition">
+                                <span class="text-gray-600">Development</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">18</span>
+                            </a>
+                            <a href="#" class="flex items-center justify-between hover:bg-gray-50 p-2 rounded-lg transition">
+                                <span class="text-gray-600">Innovation</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">12</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-playfair font-bold mb-4">TechInsights</h4>
+                    <p class="text-gray-400 text-sm">
+                        Your source for the latest insights in technology and innovation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Subscribe to our newsletter for the latest updates.
+                    </p>
+                    <div class="flex">
+                        <input type="email" 
+                               placeholder="Enter your email" 
+                               class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none flex-1">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 TechInsights. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
