@@ -1,6 +1,4 @@
 
-Built by https://www.blackbox.ai
-
 ---
 
 ```markdown
@@ -75,6 +73,5 @@ This project consists solely of the `index.html` file, which includes all necess
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Feel free to contribute to the project or reach out with any questions or suggestions!
+ 
 ```
