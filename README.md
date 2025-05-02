@@ -1,1 +1,1 @@
-salom alek
+Chokadie Radnoycha
