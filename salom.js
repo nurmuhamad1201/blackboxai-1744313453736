@@ -11,4 +11,4 @@ function greet(name) {
 // Example usage
 console.log(greet("Dunyo")); // Salom, Dunyo!
 console.log(greet(""));      // Salom, mehmon!
-console.log(greet());        // Salom, mehmon!
+console.log(greet());        
