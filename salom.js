@@ -1,9 +1,14 @@
 // salom.js
 
-// A simple greeting function
+// A simple greeting function with validation
 function greet(name) {
-    return `Salom, ${name}!`;
+    if (typeof name !== 'string' || name.trim() === '') {
+        return 'Salom, mehmon!';
+    }
+    return `Salom, ${name.trim()}!`;
 }
 
 // Example usage
-console.log(greet("Dunyo"));
+console.log(greet("Dunyo")); // Salom, Dunyo!
+console.log(greet(""));      // Salom, mehmon!
+console.log(greet());        
